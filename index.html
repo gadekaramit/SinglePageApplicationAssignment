@@ -8,8 +8,12 @@
 </head>
 <body>
 
-    <ui-view></ui-view>
-
+    <!--  <ui-view></ui-view> -->
+  
+    <ui-view class="ng-scope">
+	<h1 class="ng-scope">Welcome to Our Restaurant! </h1>
+    <a ui-sref="categories" class="ng-scope" href="#/categories">Categories</a>
+	</ui-view>
     
     <!-- Libraries -->
     <script src="lib/angular.min.js"></script>
