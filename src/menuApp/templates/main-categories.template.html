@@ -10,7 +10,8 @@
 
     <!-- uiView: --><ui-view class="ng-scope"><a ui-sref="home" class="ng-scope" href="#/">Home</a><span class="ng-scope"> &lt; </span><span class="ng-scope">Categories</span>
 <h3 class="ng-scope">Categories</h3>
-<categories items="categoriesCtrl.items" class="ng-scope ng-isolate-scope"><!-- ngRepeat: item in $ctrl.items --><div ng-repeat="item in $ctrl.items" class="ng-scope">
+<categories items="categoriesCtrl.items" class="ng-scope ng-isolate-scope"><!-- ngRepeat: item in $ctrl.items -->
+ <div ng-repeat="item in $ctrl.items" class="ng-scope">
   <a ui-sref="getitems({categoryShortName: item.short_name})" class="ng-binding" href="#/item/L"> Lunch L</a>
  
 
@@ -91,27 +92,9 @@
  
 
 </div><!-- end ngRepeat: item in $ctrl.items --></categories>
-<!-- uiView: --><ui-view class="ng-scope"></ui-view></ui-view>
+<!-- uiView: --></ui-view></ui-view>
 
     
-    <!-- Libraries -->
-    <script src="lib/angular.min.js"></script>
-    <script src="lib/angular-ui-router.min.js"></script>
-
-    <!-- Modules -->
-    <script src="src/menuApp/menudata.module.js"></script>
-    <script src="src/menuApp/menuApp.module.js"></script>
-
-    <!-- Routes -->
-    <script src="src/routes.js"></script>
-
-    <!-- MenuApp module artifacts -->
-    <script src="src/menuApp/categories.component.js"></script>
-    <script src="src/menuApp/categories.controller.js"></script>
-    <script src="src/menuApp/items.component.js"></script>
-    <script src="src/menuApp/items.controller.js"></script>
-
-    <!-- Data module artifacts -->
-    <script src="src/menuApp/menudata.service.js"></script>
+  
 
 </body></html>
